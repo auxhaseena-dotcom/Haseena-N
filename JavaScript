@@ -1,0 +1,33 @@
+3. JavaScript (script.js)
+
+// Add smooth fade-in animation when scrolling
+
+85
+
+const sections = document.querySel ectorAll(".section");
+
+window.addEventListener("scroll", () => {
+
+sections.forEach(section => {
+
+const section Top = section.getBoundingClientRect().top; if (section Top < window.innerHeight - 100) { section.classList.add("visible"); } }); });
+
+Add this CSS for JavaScript animation effect:
+
+.section {
+
+opacity: 0;
+
+transform: translateY(50px);
+
+transition: all 0.8s ease-in-out;
+
+}
+
+.section.visible {
+
+opacity: 1;
+
+transform: translateY(0);
+
+}
